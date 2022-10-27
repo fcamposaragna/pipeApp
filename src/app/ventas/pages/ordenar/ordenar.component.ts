@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-ordenar',
   templateUrl: './ordenar.component.html',
   styleUrls: ['./ordenar.component.css']
 })
-export class OrdenarComponent implements OnInit {
+export class OrdenarComponent  {
 
-  constructor() { }
+  enMayuscula:boolean = true;
 
-  ngOnInit(): void {
+  cambiar(){
+    this.enMayuscula = !this.enMayuscula;
   }
 
 }
